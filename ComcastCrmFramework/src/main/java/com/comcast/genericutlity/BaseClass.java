@@ -48,10 +48,10 @@ public class BaseClass {
 	public void launchTheBrowser(/*String BROWSER,String URL*/) throws Throwable
 	{
 		ENV_FILE_PATH = fLib.getFilePathFromPropertiesFile("projectConfigDataFilePath");
-		String BROWSER = fLib.getDataFromProperties(ENV_FILE_PATH, "browser");
-		String URL = fLib.getDataFromProperties(ENV_FILE_PATH, "url");
-		//String BROWSER = System.getProperty("browser");
-		//String URL = System.getProperty("url");
+	//	String BROWSER = fLib.getDataFromProperties(ENV_FILE_PATH, "browser");
+	//	String URL = fLib.getDataFromProperties(ENV_FILE_PATH, "url");
+		String BROWSER = System.getProperty("browser");
+		String URL = System.getProperty("url");
 
 		switch (BROWSER) {
 		case "chrome":
