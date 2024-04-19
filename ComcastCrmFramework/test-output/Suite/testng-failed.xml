@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="FirefoxBrowser(failed)">
+    <parameter name="BROWSER" value="firefox"/>
+    <parameter name="URL" value="http://rmgtestingserver:8888"/>
+    <classes>
+      <class name="com.comcastcrm.organizationtest.CreateOrgWithType">
+        <methods>
+          <include name="createOrgWithType"/>
+          <include name="launchTheBrowser"/>
+          <include name="closeTheBrowser"/>
+          <include name="closeDB"/>
+          <include name="loginToApplication"/>
+          <include name="logoutFromApplication"/>
+          <include name="connectToDB"/>
+        </methods>
+      </class> <!-- com.comcastcrm.organizationtest.CreateOrgWithType -->
+      <class name="com.comcastcrm.organizationtest.CreateOrgTest">
+        <methods>
+          <include name="launchTheBrowser"/>
+          <include name="closeTheBrowser"/>
+          <include name="closeDB"/>
+          <include name="loginToApplication"/>
+          <include name="logoutFromApplication"/>
+          <include name="connectToDB"/>
+          <include name="createOrgTest"/>
+        </methods>
+      </class> <!-- com.comcastcrm.organizationtest.CreateOrgTest -->
+    </classes>
+  </test> <!-- FirefoxBrowser(failed) -->
+</suite> <!-- Failed suite [Suite] -->
