@@ -16,8 +16,6 @@ import org.testng.annotations.BeforeSuite;
 import com.comcast.VtigerObjectRepsitory.HomePage;
 import com.comcast.VtigerObjectRepsitory.LoginPage;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class BaseClass {
 
 	public static WebDriver sdriver;
@@ -60,7 +58,6 @@ public class BaseClass {
 			driver=new ChromeDriver();
 			break;
 		case "firefox":
-			WebDriverManager.firefoxdriver().setup();
 			driver=new FirefoxDriver();
 			break;
 		case "edge":
