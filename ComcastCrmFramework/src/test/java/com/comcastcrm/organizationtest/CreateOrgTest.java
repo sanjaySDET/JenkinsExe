@@ -34,7 +34,6 @@ public class CreateOrgTest extends BaseClass{
 		CreateOrganisationPage createOrganisationPage = new CreateOrganisationPage(driver);
 		createOrganisationPage.enterOrgNameAndSave(orgName);
 		
-		Assert.fail();
 		 /*verify expected result*/
 		VerifyOrganisationPage verifyOrganisationPage = new VerifyOrganisationPage(driver);
 		String actHeader = verifyOrganisationPage.createdOrgName();
